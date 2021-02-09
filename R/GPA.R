@@ -1,4 +1,4 @@
 #' Calculate student GPA
-GPA <- function (...) {
-
+GPA <- function (object) {
+  print(object)
 }

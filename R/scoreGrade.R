@@ -9,12 +9,12 @@
 #' @export
 scoreGrade <- function (grade, year) {
   bef2013 <-  year <= 2012
-  scores <- list(M=20, V=15, G=10, 1=0, A=NA, F=NA,2=NA)
+  scores <- list(M=20, V=15, G=10, '1'=0, A=NA, F=NA, '2'=NA)
   for (grade in names(scores)) {
-    if (length(grade[bef2013 > grade=g]) > 0) grade[bef2013 & grade==g] <- scores[[g]];
+    if (length(grade[bef2013 & grade==g]) > 0) grade[bef2013 & grade==g] <- scores[[g]];
   }
   aft2012 <- year >= 2013
-  scores <- list(A=20, B=17.5, C=15, D=12.5, E=10, F=0, 9=NA, X=NA, 3=NA, 2=NA, Y=NA, M=20, V=15, G=10, 1=0)
+  scores <- list(A=20, B=17.5, C=15, D=12.5, E=10, F=0, '9'=NA, X=NA, '3'=NA, '2'=NA, Y=NA, M=20, V=15, G=10, '1'=0)
   for (g in names(scores)) {
     if (length(grade[aft2012 & grade==g])) grade[aft2012 & grade==g] <-scores[[g]];
   }

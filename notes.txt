@@ -1,0 +1,13 @@
+#MA_PROVBET
+#SV_PROVBET
+#EN_PROVBET
+#EN_A_BETYG
+#EN_B_BETYG
+#EN_C_BETYG
+#SV_A_BETYG
+#SV_B_BETYG
+#SV_C_BETYG
+# SVA: Swedish as a second language
+# SV: Regular Swedish
+#detach('package:pseregs', unload=T)
+#usethis::use_data(SUBJECTNAMES, overwrite = T)

@@ -1,7 +1,3 @@
-#' A class to represent the Swedish national school register (NSR).
-#' @slot subjects The list of subjects available in the NSR.
-#' @include GPA.R
-#' @export
 checkState <- function (object) {
   state <- T
   #if (length(object@subjects) == 0) state <- 'Bla'
@@ -11,8 +7,14 @@ checkState <- function (object) {
 #' @param data A data frame.
 #' @param subjects A list of subjects.
 #' @export
-NSR <- function (data, subjects=F) new('NSR',data, subjects);
+NSR <- function (data, subjects=F) {
+  dn = deparse(substitute(data))
+  return(new('NSR', data=dn, subjects=subjects))
+}
 
+#' A class to represent the Swedish national school register (NSR).
+#' @slot subjects The list of subjects available in the NSR.
+#' @include GPA.R
 setClass("NSR",
          prototype = list(
            ),
@@ -26,16 +28,16 @@ setClass("NSR",
          validity=checkState)
 # Constructor
 setMethod("initialize", "NSR", function (.Object, data, subjects=F) {
-  dn = deparse(substitute(data))
   .Object@SUBJECTNAMES = GRADES
   .Object@DESCRIPTIONS = DESCRIPTIONS
-  .Object = setColumns(.Object, colnames(data))
+  dta = eval(parse(text=data), envir=globalenv())
+  .Object = setColumns(.Object, colnames(dta))
   if (!is.list(subjects)) {
     subjects = as.list(.Object@SUBJECTNAMES)
     names(subjects) = .Object@SUBJECTNAMES
   }
   .Object = setSubjectNames(.Object, subjects)
-  callNextMethod(.Object, dataName=dn)
+  callNextMethod(.Object, dataName=data)
 })
 # Match grade columns (for internal use only)
 # Returns a vector

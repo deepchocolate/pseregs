@@ -6,11 +6,11 @@
 #'
 #' @param grade A vector of grades (e.g., A, E, VG, F)
 #' @param year A vector of graduation years for the corrsponding grade.
-#' @export
+#'
 scoreGrade <- function (grade, year) {
   bef2013 <-  year <= 2012
   scores <- list(M=20, V=15, G=10, '1'=0, A=NA, F=NA, '2'=NA)
-  for (grade in names(scores)) {
+  for (g in names(scores)) {
     if (length(grade[bef2013 & grade==g]) > 0) grade[bef2013 & grade==g] <- scores[[g]];
   }
   aft2012 <- year >= 2013
@@ -20,5 +20,5 @@ scoreGrade <- function (grade, year) {
   }
   # Set remaining to missing.
   if (length(grade[!is.na(grade) & !grade %in% scores]) > 0) grade[!is.na(grade) & !grade %in% scores] <- NA
-  return(grade)
+  return(as.numeric(grade))
 }

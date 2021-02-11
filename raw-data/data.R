@@ -1,4 +1,34 @@
-SUBJECTNAMES <- list(
+DESCRIPTIONS <- list(
+  PROVAR="Graduation year",
+  KOMMUN="Municipality/parish",
+  HMAN="",
+  MA_A_PROV="",
+  MA_B1_PROV="",
+  MA_B2_PROV="",
+  MA_B_PROV="",
+  MA_C_PROV="",
+  MA_D_PROV="",
+  MA_G_PROV="",
+  MA_VG_PROV="",
+  MA_E_POT="",
+  MA_C_POT="",
+  MA_A_POT="",
+  MA_E_POM="",
+  MA_C_POM="",
+  MA_A_POM="",
+  MA_PROVBET="",
+  SV_SVA="",
+  AK9_SVA="",
+  SV_A_BETYG="",
+  SV_B_BETYG="",
+  SV_C_BETYG="",
+  SV_EJ_DELT="",
+  SV_PROVBET="",
+  EN_A_BETYG="",
+  EN_B_BETYG="",
+  EN_C_BETYG="",
+  EN_EJ_DELT="",
+  EN_PROVBET="",
   BI="Biology",
   BL="Arts",
   EN="English",
@@ -18,3 +48,9 @@ SUBJECTNAMES <- list(
   NO_AMNEN="Natural science block",
   SO="Humanities block",
   SVA="Swedish, second language")
+
+GRADES = c("BI","BL","EN","FY","GE","HI","HKK","IDH","MA","MU","KE","RE","SV","SH","SL","TK","NO_AMNEN","SO","SVA")
+TESTS = c("SV_A_BETYG","SV_B_BETYG","SV_C_BETYG","SV_PROVBET","EN_A_BETYG","EN_B_BETYG","EN_C_BETYG","EN_PROVBET",
+                  "MA_E_POT","MA_C_POT","MA_A_POT","MA_E_POM","MA_C_POM","MA_A_POM","MA_A_PROV","MA_B1_PROV","MA_B2_PROV",
+                  "MA_B_PROV","MA_C_PROV","MA_D_PROV","MA_G_PROV","MA_VG_PROV")
+

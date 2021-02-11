@@ -10,4 +10,5 @@
 # SVA: Swedish as a second language
 # SV: Regular Swedish
 #detach('package:pseregs', unload=T)
-#usethis::use_data(SUBJECTNAMES, overwrite = T)
+# Usethe below code to store data for internal use in a package
+usethis::use_data(GRADES, TESTS, DESCRIPTIONS, overwrite = T, internal=T)

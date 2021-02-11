@@ -10,8 +10,8 @@ checkState <- function (object) {
 
 NSR = setClass("NSR",
          prototype = list(
-           SUBJECTNAMES=names(SUBJECTNAMES),
-           DESCRIPTIONS=SUBJECTNAMES
+           SUBJECTNAMES=GRADES,
+           DESCRIPTIONS=DESCRIPTIONS
            ),
          slots=list(
            dataName="character",
@@ -69,6 +69,25 @@ setMethod("setSubjectNames", signature("NSR", "list"),
             names(temp) <- newKeys
             object@subjectNames <- temp
             object
+          })
+
+#' Convert alphabetical grades to numeric
+#'
+#' @param object An object of class NSR
+#' @param year A vector of graduation years for the corresponding grades
+#' @param ... Grades to score.
+#' @rdname  scoreGrade
+setGeneric("scoreSubjects", function (object, year, ...) standardGeneric("scoreSubjects"))
+#' @rdname scoreGrade
+setMethod("scoreSubjects", signature("NSR", "vector"),
+          function (object, year, ...){
+            subjects <- c(...)
+            dta = eval(parse(text=object@dataName), envir=globalenv())
+            for (x in subjects) {
+              dta[,x] <- as.character(dta[,x])
+              dta[,x] <- pseregs::scoreGrade(dta[,x], year)
+            }
+            dta
           })
 
 #' Calculate grade-point average (GPA)

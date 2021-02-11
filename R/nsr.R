@@ -10,8 +10,8 @@ checkState <- function (object) {
 
 NSR = setClass("NSR",
          prototype = list(
-           SUBJECTNAMES=GRADES,
-           DESCRIPTIONS=DESCRIPTIONS
+           SUBJECTNAMES=pseregs:::GRADES,
+           DESCRIPTIONS=pseregs:::DESCRIPTIONS
            ),
          slots=list(
            dataName="character",

@@ -6,6 +6,7 @@
 #'
 #' @param grade A vector of grades (e.g., A, E, VG, F)
 #' @param year A vector of graduation years for the corrsponding grade.
+#' @export
 #'
 scoreGrade <- function (grade, year) {
   bef2013 <-  year <= 2012

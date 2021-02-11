@@ -2,5 +2,6 @@
 
 export(GPA)
 export(NSR)
+export(scoreGrade)
 export(scoreSubjects)
 export(setSubjectNames)

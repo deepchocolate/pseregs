@@ -7,11 +7,12 @@ checkState <- function (object) {
   #if (length(object@subjects) == 0) state <- 'Bla'
   return(state)
 }
-
+a <- GRADES
+b <- DESCRIPTIONS
 NSR = setClass("NSR",
          prototype = list(
-           SUBJECTNAMES=pseregs:::GRADES,
-           DESCRIPTIONS=pseregs:::DESCRIPTIONS
+           SUBJECTNAMES=a,
+           DESCRIPTIONS=b
            ),
          slots=list(
            dataName="character",

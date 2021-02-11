@@ -70,7 +70,7 @@ setMethod("setSubjectNames", signature("NSR", "list"),
             keys = names(subjectNames)
             # Unassigned
             unass = base::setdiff(object@SUBJECTNAMES, keys)
-            ass = base::intersect(object@SUBJECTNAMES, keys)
+            ass = base::intersect(keys,object@SUBJECTNAMES)
             newKeys = c(unass, ass)
             newSubjects = c(unass, as.vector(unlist(subjectNames)))
             temp <- as.list(newSubjects)
@@ -93,6 +93,8 @@ setMethod("scoreSubjects", signature("NSR", "vector"),
             subjects <- c(...)
             dta = eval(parse(text=object@dataName), envir=globalenv())
             dta <- dta[, subjects]
+            # If only one subject is seleced, assume it can be treated as a vector.
+            if (!is.data.frame(dta)) return(pseregs::scoreGrade(as.character(dta), year));
             for (subject in subjects) {
               dta[,subject] <- as.character(dta[,subject])
               dta[,subject] <- pseregs::scoreGrade(dta[,subject], year)
@@ -130,6 +132,8 @@ setMethod("rep", signature("NSR"),
 data is Math, HI
 a <- NSR(data) or
 a <- NSR(data, list(MA='Math'))
+a <- NSR(tmp, list(MA='Mat',EN='Eng',SV='Swe'))
+
 a@subjectNames returns list(MA='Math', HI='HI')
 devtools::document()
 a <- NSR(students, subjects=list(EN='Eng'))

@@ -92,9 +92,10 @@ setMethod("scoreSubjects", signature("NSR", "vector"),
           function (object, year, ...){
             subjects <- c(...)
             dta = eval(parse(text=object@dataName), envir=globalenv())
-            for (x in subjects) {
-              dta[,x] <- as.character(dta[,x])
-              dta[,x] <- pseregs::scoreGrade(dta[,x], year)
+            dta <- dta[, subjects]
+            for (subject in subjects) {
+              dta[,subject] <- as.character(dta[,subject])
+              dta[,subject] <- pseregs::scoreGrade(dta[,subject], year)
             }
             dta
           })

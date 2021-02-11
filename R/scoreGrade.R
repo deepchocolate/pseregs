@@ -2,7 +2,7 @@
 #'
 #' This function takes vectors of year and raw grades in a subject
 #' and converts it into a number between 0 and 20 according to the
-#' official scoring table according to Skolverket.
+#' official scoring table by Skolverket.
 #'
 #' @param grade A vector of grades (e.g., A, E, VG, F)
 #' @param year A vector of graduation years for the corrsponding grade.

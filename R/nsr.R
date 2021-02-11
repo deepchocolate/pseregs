@@ -7,12 +7,8 @@ checkState <- function (object) {
   #if (length(object@subjects) == 0) state <- 'Bla'
   return(state)
 }
-a <- GRADES
-b <- DESCRIPTIONS
 NSR = setClass("NSR",
          prototype = list(
-           SUBJECTNAMES=a,
-           DESCRIPTIONS=b
            ),
          slots=list(
            dataName="character",
@@ -25,8 +21,8 @@ NSR = setClass("NSR",
 # Constructor
 setMethod("initialize", "NSR", function (.Object, data, subjects=F) {
   dn = deparse(substitute(data))
-  #print(colnames(eval(parse(text=dn), envir = globalenv())))
-  #.Object = setSubjects(.Object, colnames(data))
+  .Object@SUBJECTNAMES = GRADES
+  .Object@DESCRIPTIONS = DESCRIPTIONS
   .Object = setColumns(.Object, colnames(data))
   if (!is.list(subjects)) {
     subjects = as.list(.Object@SUBJECTNAMES)

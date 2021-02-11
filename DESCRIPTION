@@ -16,3 +16,5 @@ Collate:
     'GPA.R'
     'nsr.R'
     'scoreGrade.R'
+Depends: 
+    R (>= 2.10)

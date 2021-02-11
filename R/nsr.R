@@ -10,7 +10,9 @@ checkState <- function (object) {
 #' Create an NSR object
 #' @param data A data frame.
 #' @param subjects A list of subjects.
+#' @export
 NSR <- function (data, subjects=F) new('NSR',data, subjects);
+
 setClass("NSR",
          prototype = list(
            ),

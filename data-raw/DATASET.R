@@ -1,3 +1,6 @@
+## code to prepare `DATASET` dataset goes here
+
+usethis::use_data("DATASET", internal=T)
 DESCRIPTIONS <- list(
   PROVAR="Graduation year",
   KOMMUN="Municipality/parish",
@@ -51,6 +54,5 @@ DESCRIPTIONS <- list(
 
 GRADES = c("BI","BL","EN","FY","GE","HI","HKK","IDH","MA","MU","KE","RE","SV","SH","SL","TK","NO_AMNEN","SO","SVA")
 TESTS = c("SV_A_BETYG","SV_B_BETYG","SV_C_BETYG","SV_PROVBET","EN_A_BETYG","EN_B_BETYG","EN_C_BETYG","EN_PROVBET",
-                  "MA_E_POT","MA_C_POT","MA_A_POT","MA_E_POM","MA_C_POM","MA_A_POM","MA_A_PROV","MA_B1_PROV","MA_B2_PROV",
-                  "MA_B_PROV","MA_C_PROV","MA_D_PROV","MA_G_PROV","MA_VG_PROV")
-
+          "MA_E_POT","MA_C_POT","MA_A_POT","MA_E_POM","MA_C_POM","MA_A_POM","MA_A_PROV","MA_B1_PROV","MA_B2_PROV",
+          "MA_B_PROV","MA_C_PROV","MA_D_PROV","MA_G_PROV","MA_VG_PROV")

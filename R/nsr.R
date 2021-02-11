@@ -7,7 +7,11 @@ checkState <- function (object) {
   #if (length(object@subjects) == 0) state <- 'Bla'
   return(state)
 }
-NSR = setClass("NSR",
+#' Create an NSR object
+#' @param data A data frame.
+#' @param subjects A list of subjects.
+NSR <- function (data, subjects=F) new('NSR',data, subjects);
+setClass("NSR",
          prototype = list(
            ),
          slots=list(

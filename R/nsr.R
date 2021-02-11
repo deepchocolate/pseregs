@@ -57,7 +57,10 @@ setMethod("setColumns", signature("NSR", "vector"),
             object@dataColumns <- cols
             object
           })
-# Set subjects
+
+#' Set subject names
+#' @param subjectNames A named list of subjects.
+#' @export
 setGeneric("setSubjectNames", function (object, subjectNames) standardGeneric("setSubjectNames"))
 setMethod("setSubjectNames", signature("NSR", "list"),
           function (object, subjectNames) {
@@ -80,6 +83,7 @@ setMethod("setSubjectNames", signature("NSR", "list"),
 #' @param year A vector of graduation years for the corresponding grades
 #' @param ... Grades to score.
 #' @rdname  scoreGrade
+#' @export
 setGeneric("scoreSubjects", function (object, year, ...) standardGeneric("scoreSubjects"))
 #' @rdname scoreGrade
 setMethod("scoreSubjects", signature("NSR", "vector"),
@@ -97,6 +101,7 @@ setMethod("scoreSubjects", signature("NSR", "vector"),
 #'
 #' @param object An object of class NSR.
 #' @param subjects A list of subjects to include in the GPA
+#' @export
 #' @rdname GPA
 setGeneric("GPA", function (object, subjects=F) standardGeneric("GPA"))
 #' @rdname GPA

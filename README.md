@@ -1,4 +1,5 @@
 # pseregs: Parsing SwEdish REGisterS
+An R-package.
 
 Current register coverage:
 	National School Register (Grade 9 of Swedish compulsory school)

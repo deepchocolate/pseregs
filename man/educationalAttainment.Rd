@@ -19,14 +19,17 @@ Calculate educational attainment level according to Statistics Swedens classific
 \details{
 This function takes educational attainment codes according to Statistics Swedens classification
 (mostly named SUN2000NIVA in datasets) and recodes
-them into three levels where compulsory is equivalient of at most 9 years of education, secondary 9 to 12 years, and
+them into three levels where compulsory is equivalient of at most 9 years of education, secondary 9 to 12 years (one exception), and
 tertiary greater than 12 years. Warnings are generated if data contains codes that are unknown according to the offical
 documentation from statistics Sweden.
+
+Some post secondary educations are included in secondary and these are shoften shorter than 2 years and occur outside university or
+job oriented educations shorter than 2 years at a university. See codes 410-417.
 }
 \examples{
 # 2 with compulsory education, 1 with secondary, 1 with tertiary, 2 missing
-sunCodes <- c('001','200','312', '415','999', NA)
+sunCodes <- c('001','200','312', '415', '525','999', NA)
 newCodes <- educationalAttainment(sunCodes, list(compulsory=1, secondary=2, tertiary=3))
 codes
-# [1] "1", "1", "2", "3", NA, NA
+# [1] "1", "1", "2", "2", "3", NA, NA
 }

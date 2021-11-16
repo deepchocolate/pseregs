@@ -2,6 +2,7 @@
 
 export(GPA)
 export(NSR)
+export(educationalAttainment)
 export(scoreGrade)
 export(scoreSubjects)
 export(setSubjectNames)

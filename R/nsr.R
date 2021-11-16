@@ -128,6 +128,8 @@ setMethod("rep", signature("NSR"),
           function (x, length.out) {
             GPA(x)
           })
+
+
 "
 data is Math, HI
 a <- NSR(data) or

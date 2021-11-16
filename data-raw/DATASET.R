@@ -55,5 +55,95 @@ TESTS <- c("SV_A_BETYG","SV_B_BETYG","SV_C_BETYG","SV_PROVBET","EN_A_BETYG","EN_
           "MA_E_POT","MA_C_POT","MA_A_POT","MA_E_POM","MA_C_POM","MA_A_POM","MA_A_PROV","MA_B1_PROV","MA_B2_PROV",
           "MA_B_PROV","MA_C_PROV","MA_D_PROV","MA_G_PROV","MA_VG_PROV")
 
-usethis::use_data(GRADES,TESTS,DESCRIPTIONS, overwrite=T,internal=T)
+### LISA variables
+# SUN2000: Educational attainment.
+SUN2000META <- list(
+  SOURCE = 'https://www.scb.se/dokumentation/klassifikationer-och-standarder/svensk-utbildningsnomenklatur-sun/',
+  DATALINK = 'https://www.scb.se/contentassets/aeeedec0e28c465aa524429407dcd5ba/sun-2000_niva_inriktning.xlsx',
+  ACCESSED = '2021-11-16'
+)
+# LEVEL 1 codes
+SUN2000 <- list(
+  list(
+  '0'='Förskoleutbildning',
+  '1'='Förgymnasial utbildning kortare än 9 år',
+  '2'='Förgymnasial utbildning 9 (10) år',
+  '3'='Gymnasial utbildning',
+  '4'='Eftergymnasial utbildning kortare än två år',
+  '5'='Eftergymnasial utbildning två år eller längre',
+  '6'='Forskarutbildning'
+),
+# LEVEL 2 codes
+  list(
+  '00'='Förskoleutbildning',
+  '10'='Förgymnasial utbildning kortare än 9 år',
+  '20'='Förgymnasial utbildning 9 (10) år',
+  '31'='Gymnasial utbildning kortare än två år',
+  '32'='Gymnasial utbildning två år',
+  '33'='Gymnasial utbildning tre år',
+  '41'='Eftergymnasial utbildning kortare än två år',
+  '52'='Eftergymnasial utbildning två år',
+  '53'='Eftergymnasial utbildning tre år',
+  '54'='Eftergymnasial utbildning fyra år',
+  '55'='Eftergymnasial utbildning minst fem år',
+  '60'='Övrig/ospec forskarutbildning',
+  '62'='Licentiatutbildning',
+  '64'='Doktorsutbildning'
+),
+# LEVEL 3 codes
+  list(
+  '000'='Övrig och ospecificerad förskoleutbildning',
+  '001'='Förskola',
+  '002'='Förskoleklass',
+  '100'='Övrig och ospecificerad förgymnasial utbildning kortare än 9 år',
+  '102'='Grundskoleutbildning, årskurs 1-6',
+  '106'='Folkskoleutbildning',
+  '200'='Övrig och ospecificerad förgymnasial utbildning, 9 (10) år',
+  '204'='Realskoleutbildning',
+  '206'='Grundskoleutbildning, årskurs 7-9',
+  '310'='Övrig och ospecificerad gymnasial utbildning, kortare än två år',
+  '312'='Gymnasial utbildning kortare än två år, teoretisk och studieförberedande, ej slutbetyg',
+  '313'='Gymnasial utbildning kortare än två år, yrkesinriktad, ej slutbetyg',
+  '316'='Gymnasial utbildning kortare än två år, teoretisk och studieförberedande',
+  '317'='Gymnasial utbildning kortare än två år, yrkesinriktad',
+  '320'='Övrig och ospecificerad gymnasial utbildning, två år',
+  '322'='Gymnasial utbildning två år, teoretisk och studieförberedande, ej slutbetyg',
+  '323'='Gymnasial utbildning två år, yrkesinriktad, ej slutbetyg',
+  '326'='Gymnasial utbildning två år, teoretisk och studieförberedande',
+  '327'='Gymnasial utbildning två år, yrkesinriktad',
+  '330'='Övrig och ospecificerad gymnasial utbildning, tre år',
+  '332'='Gymnasial utbildning tre år, teoretisk och studieförberedande, ej slutbetyg',
+  '333'='Gymnasial utbildning tre år, yrkesinriktad, ej slutbetyg',
+  '336'='Gymnasial utbildning tre år, teoretisk och studieförberedande',
+  '337'='Gymnasial utbildning tre år, yrkesinriktad',
+  '410'='Övrig och ospecificerad eftergymnasial utbildning, kortare än två år',
+  '412'='Högskoleutbildning, 20 poäng eller 30 högskolepoäng, ej examen',
+  '413'='Gymnasial påbyggnadsutbildning',
+  '415'='Eftergymnasial utbildning kortare än två år, ej universitet/högskola',
+  '417'='Högskoleutbildning kortare än två år, yrkesinriktad',
+  '520'='Övrig och ospecificerad eftergymnasial utbildning, två år',
+  '522'='Högskoleutbildning, 80 poäng eller 120 högskolepoäng, ej examen',
+  '525'='Eftergymnasial utbildning två år, ej universitet/högskola',
+  '526'='Högskoleutbildning två år, generell',
+  '527'='Högskoleutbildning två år, yrkesinriktad',
+  '530'='Övrig och ospecificerad eftergymnasial utbildning, tre år',
+  '532'='Högskoleutbildning, 120 poäng eller 180 högskolepoäng, ej examen',
+  '535'='Eftergymnasial utbildning tre år, ej universitet/högskola',
+  '536'='Högskoleutbildning tre år, generell',
+  '537'='Högskoleutbildning tre år, yrkesinriktad',
+  '540'='Övrig och ospecificerad eftergymnasial utbildning, fyra år',
+  '545'='Eftergymnasial utbildning fyra år, ej universitet/högskola',
+  '546'='Högskoleutbildning fyra år, generell',
+  '547'='Högskoleutbildning fyra år, yrkesinriktad',
+  '550'='Övrig och ospecificerad eftergymnasial utbildning, fem år eller längre',
+  '555'='Eftergymnasial utbildning, fem år eller längre, ej universitet/högskola',
+  '556'='Högskoleutbildning fem år eller längre, generell',
+  '557'='Högskoleutbildning fem år eller längre, yrkesinriktad',
+  '600'='Övrig och ospecificerad forskarutbildning',
+  '620'='Licentiatutbildning',
+  '640'='Doktorsutbildning'
+))
+
+# Run this to generate the data for use in the package
+usethis::use_data(GRADES,TESTS,DESCRIPTIONS,SUN2000, SUN2000META, overwrite=T,internal=T)
 

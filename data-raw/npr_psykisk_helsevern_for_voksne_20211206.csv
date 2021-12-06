@@ -1,0 +1,101 @@
+Variable,Id,Variable Group,Study,Study Id
+Bostedsfylke vasket mot Folkeregisteret,PASFYLKE2,Pasient,PHV,PHV
+Bostedsregion vasket mot Folkeregisteret,PAS_REG2,Pasient,PHV,PHV
+Rapportert fødselsnummer,FODSELSNUMMER,Pasient,PHV,PHV
+Samlivsstatus,SAMLIVSTATUS,Pasient,PHV,PHV
+Samtykkekompetanse,SAMTYKKEKOMPETANSE,Pasient,PHV,PHV
+Alder,ALDER,Pasient,PHV,PHV
+Bor pasienten alene,PASIENTBORALENE,Pasient,PHV,PHV
+Bydelskode,BYDEL,Pasient,PHV,PHV
+Folkeregisterkommune,KOMNRHJEM,Pasient,PHV,PHV
+Fødselsår,FODSELSAR,Pasient,PHV,PHV
+Individuell plan status,INDIVIDUELLPLAN,Pasient,PHV,PHV
+Individuell plan status dato,INDIVIDUELLPLANDATO,Pasient,PHV,PHV
+Kjønn,KJONN,Pasient,PHV,PHV
+Omsorg for egne barn,EGNEBARN,Pasient,PHV,PHV
+Rolle i forhold til individuell plan,ROLLEIP,Pasient,PHV,PHV
+Status for kobling mot ident-melding,NPRID_REG,Pasient,PHV,PHV
+Trygdenasjon,TRYGDENASJON,Pasient,PHV,PHV
+Ansiennitetsdato,ANSIENDATO,Henvisning,PHV,PHV
+Fagområde,FAGOMRADE,Henvisning,PHV,PHV
+Frist for nødvendig helsehjelp,FRISTSTARTBEHANDLING,Henvisning,PHV,PHV
+Fritt sykehusvalg,FRITTSYKEHUSVALG,Henvisning,PHV,PHV
+Henvisningsformalitet,HENVFORMAL,Henvisning,PHV,PHV
+Henvisningstype,HENVTYPE,Henvisning,PHV,PHV
+Henvist fra helseinstitusjon,HENVFRAINSTITUSJONID,Henvisning,PHV,PHV
+Henvist fra HPR,HENVFRAHPR,Henvisning,PHV,PHV
+Henvist fra tjeneste,HENVFRATJENESTE,Henvisning,PHV,PHV
+Henvist til helseinstitusjon,HENVTILINSTITUSJONID,Henvisning,PHV,PHV
+Henvist til HPR,HENVTILHPR,Henvisning,PHV,PHV
+Henvist til tjeneste,HENVTILTJENESTE,Henvisning,PHV,PHV
+Mottaksdato,MOTTAKSDATO,Henvisning,PHV,PHV
+Ny Tilstand,NYTILSTAND,Henvisning,PHV,PHV
+Omsorgsnivå,OMSNIVAHENV,Henvisning,PHV,PHV
+Rett til helsehjelp,RETTTILHELSEHJELP,Henvisning,PHV,PHV
+Second opinion,SECONDOPINION,Henvisning,PHV,PHV
+Slutt-dato,SLUTTDATO,Henvisning,PHV,PHV
+Tildelt behandlingsdato,TILDELTDATO,Henvisning,PHV,PHV
+Tutor,TUTOR,Henvisning,PHV,PHV
+Utfall av vurdering av henvisningen,HENVVURD,Henvisning,PHV,PHV
+Utsettelsesdato,UTSETTDATO,Henvisning,PHV,PHV
+Utsettelseskode,UTSETTKODE,Henvisning,PHV,PHV
+Ventetid sluttdato,VENTETIDSLUTTDATO,Henvisning,PHV,PHV
+Ventetid sluttkode,VENTETIDSLUTTKODE,Henvisning,PHV,PHV
+Vurderingsdato,VURDDATO,Henvisning,PHV,PHV
+Aktivitetstype,AVDOPPAKTIVITET,Opphold,PHV,PHV
+Aktivitetstype,POLKONAKTIVITET,Opphold,PHV,PHV
+ATC-kode,ATC,Opphold,PHV,PHV
+Avdeling/tjenesteenhet kode,TJENESTEENHETKODE,Opphold,PHV,PHV
+Avdelingens ReshID,TJENESTEENHETRESHID,Opphold,PHV,PHV
+Avdelingsnavn,TJENESTEENHETLOKAL,Opphold,PHV,PHV
+Behandlingssted navn,BEHANDLINGSSTEDLOKAL,Opphold,PHV,PHV
+Behandlingsstedets organisasjonsnummer,BEHANDLINGSSTEDKODE,Opphold,PHV,PHV
+Dato for når pasient er overføringsklar,OVERFORKLARDATO,Opphold,PHV,PHV
+Dato for når pasienten er utskrivningsklar,UTSKRKLARDATO,Opphold,PHV,PHV
+Dato for utsatt episode,DATOEPISODE,Opphold,PHV,PHV
+Debitor,DEBITOR,Opphold,PHV,PHV
+Deltakertype,DELTAKERTYPE,Opphold,PHV,PHV
+Epikrise sendt dato,EPIKRISEDATO,Opphold,PHV,PHV
+Fagenhet navn,FAGENHETLOKAL,Opphold,PHV,PHV
+Fagenhet ReshID,FAGENHETRESHID,Opphold,PHV,PHV
+Fagenhetskode,FAGENHETKODE,Opphold,PHV,PHV
+Fagområde,EPISODEFAG,Opphold,PHV,PHV
+Fra institusjon,FRAINSTITUSJONID,Opphold,PHV,PHV
+Fra sted,FRASTED,Opphold,PHV,PHV
+Fritt behandlingsvalg tjeneste,FBVTJENESTEEPISODE,Opphold,PHV,PHV
+Helseforetak,HF,Opphold,PHV,PHV
+Indirekte aktiviteter,POLINDIR,Opphold,PHV,PHV
+Initiativtaker,INITIATIVTAKER,Opphold,PHV,PHV
+Inndato,INNDATO,Opphold,PHV,PHV
+Innmåte hastegrad,INNMATEHAST,Opphold,PHV,PHV
+Inntid,INNTID,Opphold,PHV,PHV
+Inntilstand,INNTILSTAND,Opphold,PHV,PHV
+Institusjon identifikator,INSTITUSJONID,Opphold,PHV,PHV
+Kommunal helse- og omsorgstjeneste,KOMMUNALTJENESTE,Opphold,PHV,PHV
+Kontakttype,KONTAKTTYPE,Opphold,PHV,PHV
+Liggetid i perioden,LIGGETIDPERIODE,Opphold,PHV,PHV
+Omsorgsnivå,OMSORGSNIVA,Opphold,PHV,PHV
+oppholdstype,OPPHOLDSTYPE,Opphold,PHV,PHV
+Pasientens samtykke for sending av epikrise,EPIKRISESAMTYKKE,Opphold,PHV,PHV
+Permisjonsdøgn,PERMISJONSDOGN,Opphold,PHV,PHV
+Prosedyrer,PROSEDYRER_PHV,Opphold,PHV,PHV
+Rolle,ROLLE,Opphold,PHV,PHV
+Samarbeidsinstitusjon,SAMARBEIDSINST,Opphold,PHV,PHV
+Samarbeidstjeneste,SAMARBEIDSPART,Opphold,PHV,PHV
+Spesialist,SPESIALIST,Opphold,PHV,PHV
+Sted for aktivitet,STEDAKTIVITET,Opphold,PHV,PHV
+Sykehusregion,SH_REG,Opphold,PHV,PHV
+Takst,TAKST,Opphold,PHV,PHV
+Til institusjon,TILINSTITUSJONID,Opphold,PHV,PHV
+Til sted,TILSTED,Opphold,PHV,PHV
+Tilstand,TILSTAND,Opphold,PHV,PHV
+Tilstandsgruppe,TILSTANDSGRUPPE,Opphold,PHV,PHV
+Utdato,UTDATO,Opphold,PHV,PHV
+Utførende helsepersonell,POLUTFORENDE,Opphold,PHV,PHV
+Uttid,UTTID,Opphold,PHV,PHV
+Uttilstand,UTTILSTAND,Opphold,PHV,PHV
+År,AAR,Opphold,PHV,PHV
+Klage,KLAGE,Tvungent psykisk helsevern,PHV,PHV
+Spesialistvedtak,SPESIALISTVEDTAK,Tvungent psykisk helsevern,PHV,PHV
+Tvang,TVANG,Tvungent psykisk helsevern,PHV,PHV
+Vilkår,VILKAR,Tvungent psykisk helsevern,PHV,PHV

@@ -1,0 +1,123 @@
+Variable,Id,Variable Group,Study,Study Id
+Folkeregisterkommune,KOMNRHJEM,Pasient,BUP,BUP
+Pasientens bostedsfylke,PASFYLKE,Pasient,BUP,BUP
+Rapportert fødselsnummer,FODSELSNUMMER,Pasient,BUP,BUP
+Status for kobling mot ident-melding,NPRID_REG,Pasient,BUP,BUP
+Alder,ALDER,Pasient,BUP,BUP
+Barnets omsorgssituasjon,OMSORGSSITUASJON,Pasient,BUP,BUP
+Bydelskode,BYDEL,Pasient,BUP,BUP
+Dødsdato,DODDATO_IDENT,Pasient,BUP,BUP
+Emigrert dato,EMIGRERTDATO_IDENT,Pasient,BUP,BUP
+Foreldrerett,FORELDRERETT,Pasient,BUP,BUP
+Fødselsår,FODSELSAR,Pasient,BUP,BUP
+Individuell plan status,INDIVIDUELLPLAN,Pasient,BUP,BUP
+Individuell plan status dato,INDIVIDUELLPLANDATO,Pasient,BUP,BUP
+Kjønn,KJONN,Pasient,BUP,BUP
+Omsorgspersonens relasjon,RELASJON,Pasient,BUP,BUP
+Pasientens bostedsregion,PAS_REG,Pasient,BUP,BUP
+Registreringsdato omsorgsperson,DATOTIDREGISTRERT,Pasient,BUP,BUP
+Rolle i forhold til individuell plan,ROLLEIP,Pasient,BUP,BUP
+Samtykkekompetanse,SAMTYKKEKOMPETANSE,Pasient,BUP,BUP
+Trygdenasjon,TRYGDENASJON,Pasient,BUP,BUP
+Ansiennitetsdato,ANSIENDATO,Henvisning,BUP,BUP
+Barnevernets rolle,BARNEVERNETSROLLE,Henvisning,BUP,BUP
+Barnevernets rolle - registreringsdato,DATOROLLE,Henvisning,BUP,BUP
+Bydel i henvisning,BYDELHENV,Henvisning,BUP,BUP
+Dato for utsatt episode,DATOEPISODE,Henvisning,BUP,BUP
+Fagområde,FAGOMRADE,Henvisning,BUP,BUP
+Frist for nødvendig helsehjelp,FRISTSTARTBEHANDLING,Henvisning,BUP,BUP
+Fritt sykehusvalg,FRITTSYKEHUSVALG,Henvisning,BUP,BUP
+Henvisningsformalitet,HENVFORMAL,Henvisning,BUP,BUP
+Henvisningsgrunner,HENVISNINGSGRUNNER,Henvisning,BUP,BUP
+Henvisningstype,HENVTYPE,Henvisning,BUP,BUP
+Henvist fra helseinstitusjon,HENVFRAINSTITUSJONID,Henvisning,BUP,BUP
+Henvist fra HPR,HENVFRAHPR,Henvisning,BUP,BUP
+Henvist fra tjeneste,HENVFRATJENESTE,Henvisning,BUP,BUP
+Henvist til helseinstitusjon,HENVTILINSTITUSJONID,Henvisning,BUP,BUP
+Henvist til HPR,HENVTILHPR,Henvisning,BUP,BUP
+Henvist til tjeneste,HENVTILTJENESTE,Henvisning,BUP,BUP
+Informasjon om barnets miljø,BARNETSMILJO,Henvisning,BUP,BUP
+Mottaksdato,MOTTAKSDATO,Henvisning,BUP,BUP
+Ny Tilstand,NYTILSTAND,Henvisning,BUP,BUP
+Omsorgsnivå,OMSNIVAHENV,Henvisning,BUP,BUP
+Rett til helsehjelp,RETTTILHELSEHJELP,Henvisning,BUP,BUP
+Second opinion,SECONDOPINION,Henvisning,BUP,BUP
+Slutt-dato,SLUTTDATO,Henvisning,BUP,BUP
+Tildelt behandlingsdato,TILDELTDATO,Henvisning,BUP,BUP
+Tutor,TUTOR,Henvisning,BUP,BUP
+Utfall av vurdering av henvisningen,HENVVURD,Henvisning,BUP,BUP
+Utsettelse kode,UTSETTKODE,Henvisning,BUP,BUP
+Utsettelsesdato,UTSETTDATO,Henvisning,BUP,BUP
+Ventetid sluttdato,VENTETIDSLUTTDATO,Henvisning,BUP,BUP
+Ventetid sluttkode,VENTETIDSLUTTKODE,Henvisning,BUP,BUP
+Vurderingsdato,VURDDATO,Henvisning,BUP,BUP
+Aktivitetstype,AVDOPPAKTIVITET,Opphold,BUP,BUP
+Aktivitetstype,POLKONAKTIVITET,Opphold,BUP,BUP
+Angivelse av permisjonsstart fra et avdelingsopphold,STARTTIDSPUNKTPERMISJON,Opphold,BUP,BUP
+Angivelse av permisjonsstopp fra et avdelingsopphold,STOPPTIDSPUNKTPERMISJON,Opphold,BUP,BUP
+Avdeling med ISF-refusjon,TJENESTEENHETISFREFUSJON,Opphold,BUP,BUP
+Avdeling/tjenesteenhet kode,TJENESTEENHETKODE,Opphold,BUP,BUP
+Avdelingens RESHID,TJENESTEENHETRESHID,Opphold,BUP,BUP
+Avdelingsnavn,TJENESTEENHETLOKAL,Opphold,BUP,BUP
+Behandlingssted kode,BEHANDLINGSSTEDKODE,Opphold,BUP,BUP
+Behandlingssted med ISF-refusjon,BEHANDLINGSSTEDISFREFUSJON,Opphold,BUP,BUP
+Behandlingssted navn,BEHANDLINGSSTEDLOKAL,Opphold,BUP,BUP
+Behandlingssted ReshID,BEHANDLINGSSTEDRESHID,Opphold,BUP,BUP
+Dato for når pasient er overføringsklar,OVERFORKLARDATO,Opphold,BUP,BUP
+Dato for når pasienten er utskrivningsklar,UTSKRKLARDATO,Opphold,BUP,BUP
+Debitor,DEBITOR,Opphold,BUP,BUP
+Deltakertype,DELTAKERTYPE,Opphold,BUP,BUP
+Epikrise sendt dato,EPIKRISEDATO,Opphold,BUP,BUP
+Fagenhet kode,FAGENHETKODE,Opphold,BUP,BUP
+Fagenhet med ISF-refusjon,FAGENHETISFREFUSJON,Opphold,BUP,BUP
+Fagenhet navn,FAGENHETLOKAL,Opphold,BUP,BUP
+Fagenhet ReshID,FAGENHETRESHID,Opphold,BUP,BUP
+Fagområde,EPISODEFAG,Opphold,BUP,BUP
+Fra institusjon,FRAINSTITUSJONID,Opphold,BUP,BUP
+Fra sted,FRASTED,Opphold,BUP,BUP
+Helseforetak,HF,Opphold,BUP,BUP
+Hvilken type tidspunkt som rapporteres i attributtet Tidspunkt,TYPETIDSPUNKT,Opphold,BUP,BUP
+Indirekte aktiviteter,POLINDIR,Opphold,BUP,BUP
+Initiativtaker,INITIATIVTAKER,Opphold,BUP,BUP
+Inndato,INNDATO,Opphold,BUP,BUP
+Innmåte hastegrad,INNMATEHAST,Opphold,BUP,BUP
+Inntid,INNTID,Opphold,BUP,BUP
+Inntilstand,INNTILSTAND,Opphold,BUP,BUP
+Institusjon identifikator,INSTITUSJONID,Opphold,BUP,BUP
+Intern konsultasjon,INTERN_KONS,Opphold,BUP,BUP
+Kommunal helse- og omsorgstjeneste,KOMMUNALTJENESTE,Opphold,BUP,BUP
+Kontakttype,KONTAKTTYPE,Opphold,BUP,BUP
+Liggetid i perioden,LIGGETIDPERIODE,Opphold,BUP,BUP
+Multiaksial tilstandskoding,TILSTANDSAKSEKODING,Opphold,BUP,BUP
+"Om helsepersonen har ""relevant spesialitet""",SPESIALITET,Opphold,BUP,BUP
+Omsorgsnivå,OMSORGSNIVA,Opphold,BUP,BUP
+Oppholdstype,OPPHOLDSTYPE,Opphold,BUP,BUP
+Pasientens samtykke for sending av epikrise,EPIKRISESAMTYKKE,Opphold,BUP,BUP
+Permisjonsdøgn,PERMISJONSDOGN,Opphold,BUP,BUP
+Permisjonstype,PERMISJONTYPE,Opphold,BUP,BUP
+Rolle,ROLLE,Opphold,BUP,BUP
+Sted for aktivitet,STEDAKTIVITET,Opphold,BUP,BUP
+Sykehusregion,SH_REG,Opphold,BUP,BUP
+Systemnavn EPJ,NAVNEPJ,Opphold,BUP,BUP
+Takst,TAKST,Opphold,BUP,BUP
+Til institusjon,TILINSTITUSJONID,Opphold,BUP,BUP
+Til sted,TILSTED,Opphold,BUP,BUP
+Utdato,UTDATO,Opphold,BUP,BUP
+Utførende helsepersonell,POLUTFORENDE,Opphold,BUP,BUP
+Uttid,UTTID,Opphold,BUP,BUP
+Uttilstand,UTTILSTAND,Opphold,BUP,BUP
+År,AAR,Opphold,BUP,BUP
+Dato for klage,DATOKLAGE,Tvungent psykisk helsevern,BUP,BUP
+Dato for klage på spesialistvedtak,DATOSPESVKLAGE,Tvungent psykisk helsevern,BUP,BUP
+Dato for klage på vedtak om bruk av tvangsmidler,DATOTVANGKLAGE,Tvungent psykisk helsevern,BUP,BUP
+Dato for spesialistvedtak,DATOSPESIALISTVEDTAK,Tvungent psykisk helsevern,BUP,BUP
+Dato for vedtak om bruk av tvangsmidler,DATOVEDTAK,Tvungent psykisk helsevern,BUP,BUP
+Klage på vedtak om tvang,TVANGKLAGE,Tvungent psykisk helsevern,BUP,BUP
+Lovgrunnlag/spesialistvedtak,TYPEFORMALITET,Tvungent psykisk helsevern,BUP,BUP
+Spesialistvedtak fattet av,FATTETAV,Tvungent psykisk helsevern,BUP,BUP
+Tid siste spesialistvedtak,TIDSISTESPESIALISTVEDTAK,Tvungent psykisk helsevern,BUP,BUP
+Tidspunkt for start av tvang,TIDSPUNKTSTART,Tvungent psykisk helsevern,BUP,BUP
+Tidspunkt for stopp av tvang,TIDSPUNKTSTOPP,Tvungent psykisk helsevern,BUP,BUP
+Type klage,TYPEKLAGE,Tvungent psykisk helsevern,BUP,BUP
+Vedtak om tvang,TYPETVANG,Tvungent psykisk helsevern,BUP,BUP
+Vilkår tvungent psykisk helsevern,VILKARTYPE,Tvungent psykisk helsevern,BUP,BUP
